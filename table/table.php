@@ -118,7 +118,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
+        <link rel="icon" href="./assets/ACU.ico" type="image/icon type">
         <!-- Bootstrap CSS -->
         <link
             rel="stylesheet"
@@ -127,7 +127,7 @@
             crossorigin="anonymous"
         />
 
-        <title>UTS PEMWEB KEL 7</title>
+        <title>Template Table Form</title>
     </head>
     <!-- <body style="background: <?php //echo $data[0][5]; ?>;"> -->
     <body>

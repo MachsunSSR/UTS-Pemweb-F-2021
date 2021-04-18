@@ -35,7 +35,8 @@ $data = read_csv();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Template Login Form</title>
+    <link rel="icon" href="./assets/ACU.ico" type="image/icon type">
     <link rel="stylesheet" href="login.css">
 </head>
 <body style="background: <?php echo $data[0][3]; ?>">

@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>UTS Pemweb - Kelompok 7</title>
+        <link rel="icon" href="./assets/ACU.ico" type="image/icon type">
         <!-- BootstrapCSS -->
         <link
             rel="stylesheet"
@@ -17,17 +18,17 @@
         <div class="container mb-5">
             <div class="title text-center text-white mt-5">
             <h1><b>Template Generator</b></h1>
-            <p>UTS Pemrograman Web F - Kelompok 7</p>
+            <h3><b>UTS Pemrograman Web F - Kelompok 7</b></h3>
             </div>
             <div class="row items-center justify-content-center">
             <div class="card col-md-4 m-3 py-3 rounded-lg shadow" style="width: 18rem">
-                <img class="card-img-top mx-auto" src="./table.svg" alt="Card image cap" style="width: 16rem"/>
+                <img class="card-img-top mx-auto" src="./assets/table.svg" alt="Card image cap" style="width: 16rem"/>
                 <div class="card-body text-center">
                     <h2 class="card-title">Input Data & Table Form</h2>
                     <p class="card-text">
                         Template Input data dan menampilkan data yang mendukung metode CRUD Melalui Database/file CSV
                     </p>
-                    <form action="table.php" method="POST">
+                    <form action="./table/table.php" method="POST">
                         <button
                             type="submit"
                             name="export"
@@ -50,13 +51,13 @@
                 </div>
             </div>
             <div class="card col-md-4 m-3 py-3 rounded-lg shadow" style="width: 18rem">
-                <img class="card-img-top mx-auto" src="./login.svg" alt="Card image cap" style="width: 16rem" />
+                <img class="card-img-top mx-auto" src="./assets/login.svg" alt="Card image cap" style="width: 16rem" />
                 <div class="card-body text-center mt-3">
                     <h2 class="card-title">Login Form</h2>
                     <p class="card-text mt-4">
                         Template Login Form yang mendukung Cookie dan Session serta autentikasi user melalui Database
                     </p>
-                    <form action="login.php" method="POST">
+                    <form action="./login/login.php" method="POST">
                         <button
                             type="submit"
                             name="export"
