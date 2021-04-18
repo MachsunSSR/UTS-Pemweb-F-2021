@@ -241,18 +241,29 @@
                             <td><?=$data[$no][3]?></td>
                             <td><?=$data[$no][4]?></td>
                             <td>
-                            <a
+                            <!-- <a
+                            href="table.php?hal=edit&id=<?//=$data[$no][0]?>"
+                            class="btn btn-info"
+                           
+                        > -->
+                        <a
                             href="table.php?hal=edit&id=<?=$data[$no][0]?>"
                             class="btn btn-info"
                            
                         >
                             Edit
                         </a>
-                        <a
-                            href="table.php?hal=hapus&id=<?=$data[$no][0]?>"
+                        <!-- <a
+                            
                             onclick="return confirm('Apakah anda yakin untuk menghapus data ini?')"
                             class="btn btn-danger"
-                         
+                            href="table.php?hal=hapus&id=<?//=$data[$no][0]?>"
+                        > -->
+                        <a
+                            
+                            onclick="return confirm('Apakah anda yakin untuk menghapus data ini?')"
+                            class="btn btn-danger"
+                            href="table.php?hal=hapus&id=<?=$data[$no][0]?>"
                         >
                             Hapus
                         </a>
