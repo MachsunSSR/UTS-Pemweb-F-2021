@@ -263,7 +263,6 @@
                             
                             onclick="return confirm('Apakah anda yakin untuk menghapus data ini?')"
                             class="btn btn-danger"
-                            href="table.php?hal=hapus&id=<?=$data[$no][0]?>"
                         >
                             Hapus
                         </a>
