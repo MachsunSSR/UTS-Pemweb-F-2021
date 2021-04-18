@@ -38,7 +38,7 @@
                             Lihat Template
                         </button>
                     </form>
-                    <form action="exportable.php" method="POST">
+                    <form action="./table/exportable.php" method="POST">
                         <button
                             type="submit"
                             name="export"
@@ -67,7 +67,7 @@
                             Lihat Template
                         </button>
                     </form>
-                    <form action="exportlogin.php" method="POST">
+                    <form action="./login/exportlogin.php" method="POST">
                         <button
                             type="submit"
                             name="export"
