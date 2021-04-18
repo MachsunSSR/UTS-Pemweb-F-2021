@@ -247,7 +247,7 @@
                            
                         > -->
                         <a
-                            href="table.php?hal=edit&id=<?=$data[$no][0]?>"
+                            href="#"
                             class="btn btn-info"
                            
                         >
@@ -260,7 +260,7 @@
                             href="table.php?hal=hapus&id=<?//=$data[$no][0]?>"
                         > -->
                         <a
-                            
+                        href="#"
                             onclick="return confirm('Apakah anda yakin untuk menghapus data ini?')"
                             class="btn btn-danger"
                         >
