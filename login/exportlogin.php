@@ -11,11 +11,11 @@ if(isset($_POST["export"]))
         mkdir($dir, "0777", true);
     }
 
-    //connect database
-    $connect = mysqli_connect("localhost", "root", "", "uts_pemweb");
+    // //connect database
+    // $connect = mysqli_connect("localhost", "root", "", "uts_pemweb");
     
-    //create file requirement.csv
-    $output = fopen(__DIR__ . "./form_login/requirement.csv", "w");
+    // //create file requirement.csv
+    // $output = fopen(__DIR__ . "./form_login/requirement.csv", "w");
 
     //Create Random Color
     $rand = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f');
@@ -23,17 +23,20 @@ if(isset($_POST["export"]))
 
     //create headers
     fputcsv($output, array("id", "username", "password", $color));
+    fputcsv($output, array(1, "machsunssr", "123", $color));
+    fputcsv($output, array(2, "root", "root", $color));
+    fputcsv($output, array(3, "admin", "admin", $color));
 
-    //Query database
-    $query = "SELECT * FROM tlogin";
-    $result = mysqli_query($connect, $query);
+    // //Query database
+    // $query = "SELECT * FROM tlogin";
+    // $result = mysqli_query($connect, $query);
 
-    //Mengisi data
-    while($row = mysqli_fetch_assoc($result))
-    {
-        fputcsv($output, $row);
-    }
-    fclose($output);
+    // //Mengisi data
+    // while($row = mysqli_fetch_assoc($result))
+    // {
+    //     fputcsv($output, $row);
+    // }
+    // fclose($output);
 
     //Membuat ZIP
     // Enter the name of directory
