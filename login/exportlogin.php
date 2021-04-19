@@ -6,7 +6,7 @@ if(isset($_POST["export"]))
     //create new folder 
     $dir = "form_login";
     if(is_dir($dir)){
-        echo "exist";
+        echo "folder exist";
     }else{
         mkdir($dir, "0777", true);
     }
@@ -15,7 +15,7 @@ if(isset($_POST["export"]))
     // $connect = mysqli_connect("localhost", "root", "", "uts_pemweb");
     
     //create file requirement.csv
-    $output = fopen(__DIR__ . "./form_login/requirement.csv", "w");
+    $output = fopen("./form_login/requirement.csv", "w");
 
     //Create Random Color
     $rand = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f');
@@ -70,7 +70,6 @@ if(isset($_POST["export"]))
         readfile($zipcreated);  
 
         unlink($zipcreated); 
-        echo "File exist.";
         exit;
     } else{
         echo "File does not exist.";
