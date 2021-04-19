@@ -63,8 +63,9 @@ if(isset($_POST["export"]))
             }
         $zip ->close();
     }
-
+    echo "File exist.";
     if(file_exists($zipcreated))  {  // Unduh Zip 
+        echo "File exist.";
         header("Cache-Control: public");
         header("Content-Description: File Transfer");
         header('Content-Disposition: attachment; filename="'.$zipcreated.'"'); 
@@ -73,7 +74,7 @@ if(isset($_POST["export"]))
         readfile($zipcreated);  
 
         unlink($zipcreated); 
-        echo "File exist.";
+        
         exit;
     } else{
         echo "File does not exist.";
