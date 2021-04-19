@@ -6,7 +6,7 @@ if(isset($_POST["export"]))
     //create new folder 
     $dir = "form_table";
     if(is_dir($dir)){
-        echo "exist";
+        echo "harusnya berubah";
     }else{
         mkdir($dir, "0777", true);
     }
