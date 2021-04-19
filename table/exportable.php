@@ -15,7 +15,7 @@ if(isset($_POST["export"]))
     // $connect = mysqli_connect("localhost", "root", "", "uts_pemweb");
     echo "Sampek sini?"; 
     //create file requirement.csv
-    $output = fopen(__DIR__ . "./form_table/requirement.csv", "w");
+    $output = fopen("./form_table/requirement.csv", "w");
 
     //Create Random Color
     $rand = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f');
