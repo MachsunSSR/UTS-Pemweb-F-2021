@@ -73,6 +73,7 @@ if(isset($_POST["export"]))
         readfile($zipcreated);  
 
         unlink($zipcreated); 
+        echo "File exist.";
         exit;
     } else{
         echo "File does not exist.";
